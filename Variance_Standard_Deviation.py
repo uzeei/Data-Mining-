@@ -41,3 +41,5 @@ print(ssdx)
 print(ssdy)
 
 #HW Task 1: Implement the above code without numpy or any other module
+
+

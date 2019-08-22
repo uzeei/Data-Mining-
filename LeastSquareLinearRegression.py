@@ -1,5 +1,7 @@
 #Task 2: Implement  least-squares linear regression
 import numpy as np
+from scipy.stats import pearsonr
+
 y=[2.1,4.1,6.1,8.1,10.1,12.1,14.1,16.1,18.1,20.1]
 x=[1,2,3,4,5,6,7,8,9,10]
 
@@ -33,3 +35,10 @@ print(y_est(11,b1,b0))
 #HW Task 2: a)Implement code to find correlation coefficient 'r'
 #           b) Use correlation coefficient r to calculate beta1=r*(sy/sx)
 #           c) Check if new beta1 is same as the beta1=b1 calculated in our lab task 2 code.
+
+r, p_value= pearsonr(x,y)
+print(r)
+beta1= r*(np.std(y)/np.std(x))
+print(beta1)
+
+
