@@ -1,0 +1,2 @@
+Run all the code in Chapter 1
+of "Mastering Python for Data Science"
